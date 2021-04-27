@@ -36,22 +36,21 @@
             <h1>MNIST Number Recognition</h1>
             <div style="float: center; width: 100%;">
             <ul>
-				<li>The purpose of this website is predicting numbers from <a href="https://en.wikipedia.org/wiki/MNIST_database">MNIST Dataset</a>.
-					Each number in dataset is a handwritten black and white image of size 28x28. </li>
-				<li>The predicting Machine Learning algorithm was trained using Google's <i>TensorFlow</i>.</li>
-				<li>Implementation in the cloud was made using following AWS services: <i>VPC, S3, SageMaker, Lambda, API Gateway</i>.</li>
+				<li>The purpose of this website is predicting numbers from <a href="https://en.wikipedia.org/wiki/MNIST_database">MNIST Test Dataset</a>.
+					Each number in the dataset is a handwritten black and white image of size 28x28. </li>
+				<li>The machine learning algorithm was trained using Google's <a href="https://www.tensorflow.org/">TensorFlow</a>.</li>
+				<li>Implementation in the cloud was made using following AWS services: <a href="https://aws.amazon.com/vpc/">VPC</a>, <a href="">S3</a>, <a href="https://aws.amazon.com/sagemaker/">SageMaker</a>, <a href="https://aws.amazon.com/lambda/">Lambda</a>, <a href="https://aws.amazon.com/api-gateway/">API Gateway</a>.</li>
 			</ul>
 			<h4>Instructions</h4>
 			<ul>
 				<li>For predictions you need raw data of the single image generated in JSON format.
-				<li>Please visit my Github Repo and go through <a href="https://github.com/lukas-varga/MNIST-Number-Recognition/blob/main/MNISTNumberRecognition.ipynb">this Jupyter Notebook</a>.</li>
-				<li>You will need working Python 3 environment with some basic libraries.</li>
-				<li>Once you take a look at generated image and copy the raw image data into clipboard you can paste them into TextArea bellow and predict the result.</li>
+				<li>Please visit my Github Repo and go through <a href="https://github.com/lukas-varga/MNIST-Number-Recognition/blob/main/MNISTNumberRecognition.ipynb">this Jupyter Notebook</a>. You will need working Python 3 environment.</li>
+				<li>Once you take a look at generated image and you can copy the raw image data into TextArea bellow.</li>
+				<li>Before proceeding to predictions make sure you have installed and turned on <a href="https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc?utm_source=chrome-ntp-icon">this chrome extension</a> or similar one for other browsers.</li>
+				<li>Without that you will receive no predictions because the API Gateway is blocking the access <a href="https://stackoverflow.com/questions/10752055/cross-origin-requests-are-only-supported-for-http-error-when-loading-a-local">using CORS</a>.</li>		
 			</ul>	
 			</div>
-			
-			<br>
-			
+
             <form method="POST"      
 				  action="https://c4vtobg9pj.execute-api.eu-central-1.amazonaws.com/TEST/mnistresource"
                   onsubmit="return submitForm(this);" >                     <!-- HERE IS WHERE YOU NEED TO ENTER THE API URL -->
