@@ -36,8 +36,8 @@
             <h1>MNIST Number Recognition</h1>
             <div style="float: center; width: 100%;">
             <ul>
-				<li>The purpose of this website is predicting numbers from <a href="https://en.wikipedia.org/wiki/MNIST_database">MNIST Test Dataset</a>.
-					Each number in the dataset is a handwritten black and white image of size 28x28. </li>
+				<li>The purpose of this website is predicting numbers from <a href="https://en.wikipedia.org/wiki/MNIST_database">MNIST Test Dataset</a>.</li>
+				<li>Each number in the dataset is a handwritten black and white image of size 28x28 pixels. </li>
 				<li>The machine learning algorithm was trained using Google's <a href="https://www.tensorflow.org/">TensorFlow</a>.</li>
 				<li>Implementation in the cloud was made using following AWS services: <a href="https://aws.amazon.com/vpc/">VPC</a>, <a href="">S3</a>, <a href="https://aws.amazon.com/sagemaker/">SageMaker</a>, <a href="https://aws.amazon.com/lambda/">Lambda</a>, <a href="https://aws.amazon.com/api-gateway/">API Gateway</a>.</li>
 			</ul>
@@ -45,9 +45,9 @@
 			<ul>
 				<li>For predictions you need raw data of the single image generated in JSON format.
 				<li>Please visit my Github Repo and go through <a href="https://github.com/lukas-varga/MNIST-Number-Recognition/blob/main/MNISTNumberRecognition.ipynb">this Jupyter Notebook</a>. You will need working Python 3 environment.</li>
-				<li>Once you take a look at generated image and you can copy the raw image data into TextArea bellow.</li>
+				<li>Once you take a look at the generated image you can copy the raw image data into TextArea bellow.</li>
 				<li>Before proceeding to predictions make sure you have installed and turned on <a href="https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc?utm_source=chrome-ntp-icon">this chrome extension</a> or similar one for other browsers.</li>
-				<li>Without that you will receive no predictions because the API Gateway is blocking the access <a href="https://stackoverflow.com/questions/10752055/cross-origin-requests-are-only-supported-for-http-error-when-loading-a-local">using CORS</a>.</li>		
+				<li>Without that it is not possible to receive predictions because the API Gateway is blocking the access <a href="https://stackoverflow.com/questions/10752055/cross-origin-requests-are-only-supported-for-http-error-when-loading-a-local">using CORS</a>.</li>		
 			</ul>	
 			</div>
 
